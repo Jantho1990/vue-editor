@@ -1,7 +1,5 @@
-.f16px {
-  font-size: 16px;
-}
-
-.f18px {
-  font-size: 18px;
+@for $size from 12 to 25 {
+  .f#{$size}px {
+    font-size: #{$size}px;
+  }
 }
