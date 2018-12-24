@@ -25,7 +25,6 @@ export default {
                     document.execCommand('underline', false, null)
                     break
                 case 'font-size':
-                debugger
                     const text = window.getSelection().toString()
                     const span = `<span class="font f${data.fontSize}px">${text}</span>`
                     document.execCommand('insertHTML', false, span)
