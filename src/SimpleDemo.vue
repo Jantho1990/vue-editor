@@ -23,8 +23,8 @@ export default {
 
     },
     methods: {
-        handleRequestContentUpdate (type) {
-            this.$refs.editorDiv.updateContent(type)
+        handleRequestContentUpdate ({type, data}) {
+            this.$refs.editorDiv.updateContent(type, data)
         }
     }
 }
