@@ -9,6 +9,9 @@
 <script>
 export default {
     name: 'EditorDiv',
+    created () {
+        document.execCommand('styleWithCSS', false, true)
+    },
     methods: {
         updateContent (updateType) {
             switch (updateType) {
